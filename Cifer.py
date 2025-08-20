@@ -51,17 +51,17 @@ def __Encrypted__():
 
 def __Descrypted__():
 
-    arquivo = "cesar.txt"
-    texto = str(input("=> hash: "))
+    hashes = "cesar.txt"
+    text = str(input("=> hash: "))
 
     try:
 
 	# O Nosso laço for so pode ler 1 arquivo da lista. se houver 2 hashes, ele não encontrara o segundo :(
-        with open(arquivo, "r") as file:
-            for numero_linha, linha in enumerate(file, 1):
-                if texto in linha:
+        with open(hashes, "r") as file:
+            for numberLine, line in enumerate(file, 1):
+                if text in line:
                     print("[!] password\n")
-                    print(numero_linha, linha[0].strip()+linha[2].strip()+linha[4].strip()+linha[6].strip()+linha[8].strip()+linha[10].strip()+linha[12].strip()+linha[14].strip())
+                    print(numberLine, line[0]+line[2]+line[4]+line[6]+line[8]+line[10]+line[12]+line[14])
 
                 else:
                     print("=> hash not found")
@@ -69,6 +69,7 @@ def __Descrypted__():
 
     except Exception as error:
         print("=> not found list", error)
+
 
 if __name__ == "__main__":
     main()
