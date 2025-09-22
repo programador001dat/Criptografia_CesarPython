@@ -1,10 +1,4 @@
 import random
-# *-* coding: UTF-8 *-*
-
-''' Esté é um script em linguagem python desenvolvido por Caio Ramos
-    Ele foi pensado em um tipo de criptografia Cesar.
-    Adicione uma senha, como funciona o tipo de criptografia o
-    Cesar acrescenta um caractere após outro, até finalizar a senha. '''
 
 def main():
 
