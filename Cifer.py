@@ -50,7 +50,7 @@ def __Descrypted__():
 
     try:
 
-	# O Nosso laço for so pode ler 1 arquivo da lista. se houver 2 hashes, ele não encontrara o segundo :(
+		# O Nosso laço for so pode ler 1 arquivo da lista. se houver 2 hashes, ele não encontrara o segundo :(
         with open(hashes, "r") as file:
             for numberLine, line in enumerate(file, 1):
                 if text in line:
